@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Local Foods - SauceryHub</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#fff8f2;
+}
+
+header{
+    background:linear-gradient(90deg,#ff6b00,#ff2e2e);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:80px;
+    margin-bottom:5px;
+}
+
+nav{
+    background:#111;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+section{
+    padding:30px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.price{
+    color:#ff3b00;
+    font-weight:bold;
+}
+
+.btn{
+    background:#25D366;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    width:100%;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="imagez/logo.png" class="logo">
+
+<h1>Local Soups & Native Meals 🍲</h1>
+
+<p>SauceryHub Meals</p>
+
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="#soups">Soups</a>
+</nav>
+
+<section id="soups">
+
+<h2>🍲 Soup Bowls</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<h3>Egusi Soup</h3>
+<p class="price">20K • 26K • 35K</p>
+<button class="btn" onclick="order('Egusi Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Vegetable Soup</h3>
+<p class="price">20K • 26K • 35K</p>
+<button class="btn" onclick="order('Vegetable Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Ogbono Soup</h3>
+<p class="price">20K • 26K • 35K</p>
+<button class="btn" onclick="order('Ogbono Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Afang Soup</h3>
+<p class="price">25K • 32K • 38K</p>
+<button class="btn" onclick="order('Afang Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Chicken Stew</h3>
+<p class="price">22K • 25K • 32K • 40K</p>
+<button class="btn" onclick="order('Chicken Stew')">Order</button>
+</div>
+
+<div class="card">
+<h3>Turkey Stew</h3>
+<p class="price">22K • 28K • 35K</p>
+<button class="btn" onclick="order('Turkey Stew')">Order</button>
+</div>
+
+<div class="card">
+<h3>Ofada Stew</h3>
+<p class="price">25K • 30K • 38K</p>
+<button class="btn" onclick="order('Ofada Stew')">Order</button>
+</div>
+
+<div class="card">
+<h3>Oha Soup</h3>
+<p class="price">25K • 32K • 40K</p>
+<button class="btn" onclick="order('Oha Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>White Soup</h3>
+<p class="price">15K • 20K • 30K</p>
+<button class="btn" onclick="order('White Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Pepper Soup</h3>
+<p class="price">20K • 26K • 33K</p>
+<button class="btn" onclick="order('Pepper Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Fish Stew</h3>
+<p class="price">20K • 25K • 32K</p>
+<button class="btn" onclick="order('Fish Stew')">Order</button>
+</div>
+
+<div class="card">
+<h3>Fisherman Soup</h3>
+<p class="price">30K • 40K • 55K</p>
+<button class="btn" onclick="order('Fisherman Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Banga Soup</h3>
+<p class="price">25K • 32K • 40K</p>
+<button class="btn" onclick="order('Banga Soup')">Order</button>
+</div>
+
+<div class="card">
+<h3>Edikang Ikong</h3>
+<p class="price">22K • 28K • 35K</p>
+<button class="btn" onclick="order('Edikang Ikong')">Order</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>📍 Akobo, Ibadan</p>
+<p>📞 +234 913 383 9158</p>
+
+</footer>
+
+<script>
+
+function order(meal){
+
+let msg =
+"Hello SauceryHub 👋 I want to order " + meal;
+
+window.open(
+"https://wa.me/2349133839158?text=" +
+encodeURIComponent(msg)
+);
+
+}
+
+</script>
+
+</body>
+</html>
