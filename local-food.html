@@ -101,9 +101,12 @@ footer{
 
 <section id="soups">
 
+<!-- SOUP BOWLS -->
+<section id="soups">
+
 <h2>🍲 Soup Bowls</h2>
 
-div class="menu-grid">
+<div class="menu-grid">
 
 <div class="card">
 <h3>Egusi Soup</h3>
@@ -206,8 +209,9 @@ div class="menu-grid">
 </div>
 
 </div>
-</section>
-    <section id="local-order">
+
+<!-- LOCAL FOOD ORDER FORM -->
+<section id="local-order">
 
 <h2>🛒 Order Local Food</h2>
 
@@ -253,7 +257,49 @@ Send Local Food Order
 </form>
 
 </section>
-<footer>
+
+</section>
+    </body>
+    <script>
+
+function sendLocalOrder(e){
+
+e.preventDefault();
+
+let name =
+document.getElementById("localname").value;
+
+let phone =
+document.getElementById("localphone").value;
+
+let meal =
+document.getElementById("localmeal").value;
+
+let size =
+document.getElementById("localsize").value;
+
+let address =
+document.getElementById("localaddress").value;
+
+let msg =
+`Hello SauceryHub 👋
+
+LOCAL FOOD ORDER
+
+Name: ${name}
+Phone: ${phone}
+Meal: ${meal}
+Size: ${size}
+Address: ${address}`;
+
+window.open(
+"https://wa.me/2349133839158?text="
++ encodeURIComponent(msg)
+);
+
+}
+
+</script>
 
 <p>📍 Akobo, Ibadan</p>
 <p>📞 +234 913 383 9158</p>
